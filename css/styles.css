@@ -1,0 +1,41 @@
+body {
+  background-color: #7e7580; }
+
+.contenedor {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 0,3fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-areas: "header header" "main section" "footer footer"; }
+  .contenedor .headerIndex {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around; }
+    .contenedor .headerIndex .logo {
+      width: 30%;
+      margin: 1rem; }
+    .contenedor .headerIndex nav ul {
+      display: flex;
+      column-gap: 2rem;
+      font-size: 1.5rem;
+      margin: 3rem; }
+      .contenedor .headerIndex nav ul li {
+        list-style: none; }
+  .contenedor .mainIndex {
+    grid-area: main;
+    text-align: center;
+    align-self: center; }
+    .contenedor .mainIndex .mainH1 {
+      margin-top: 1rem; }
+    .contenedor .mainIndex .mainP {
+      font-size: 1.8rem; }
+  .contenedor section {
+    grid-area: section;
+    display: flex;
+    justify-content: center; }
+    .contenedor section .imagenSection {
+      width: 60%; }
+  .contenedor .footerIndex {
+    grid-area: footer;
+    text-align: center;
+    margin-top: 3rem; }
