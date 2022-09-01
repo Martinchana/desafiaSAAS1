@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #7e7580; }
 
@@ -39,3 +40,178 @@ body {
     grid-area: footer;
     text-align: center;
     margin-top: 3rem; }
+
+/* estilos page diseños*/
+.headerDisenos {
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .headerDisenos .logo {
+    width: 30%;
+    margin: 1rem; }
+  .headerDisenos nav ul {
+    display: flex;
+    margin: 3rem; }
+    .headerDisenos nav ul li {
+      display: inline-block;
+      list-style: none;
+      margin-top: 0.5rem;
+      margin-left: 2rem;
+      font-size: 1.5rem; }
+
+main .galeriaContenedor {
+  width: 100vh;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.1fr 0.1fr 0.1fr;
+  grid-auto-rows: 150px;
+  padding: 5px;
+  justify-content: center;
+  margin: auto;
+  gap: 6rem;
+  justify-content: center; }
+  main .galeriaContenedor .galeriaItem {
+    width: 100vh;
+    position: relative;
+    height: 156px;
+    width: 278px; }
+    main .galeriaContenedor .galeriaItem .galeriaImg {
+      width: 80%;
+      height: 140%;
+      object-fit: cover;
+      display: block; }
+    main .galeriaContenedor .galeriaItem .galeriaTitulo {
+      position: absolute;
+      bottom: o;
+      font-size: 1rem;
+      text-align: end; }
+
+.footerDisenos {
+  grid-area: footer;
+  text-align: center;
+  margin: auto; }
+
+/*estilos de page novias*/
+.header {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0rem; }
+  .header .headerDivLogo {
+    margin: 1rem; }
+    .header .headerDivLogo .headerLogo {
+      width: 65%; }
+  .header .headerNav ul {
+    list-style-type: none; }
+    .header .headerNav ul li {
+      display: inline-block;
+      margin-left: 3rem;
+      font-size: 125%; }
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 15rem;
+  gap: 5rem;
+  margin-top: -8rem; }
+
+.mainNovias {
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center; }
+  .mainNovias .imagenes {
+    margin: 35px 50px 35px 50px;
+    justify-content: center;
+    height: 350px;
+    width: 230;
+    display: flex;
+    gap: 15px; }
+    .mainNovias .imagenes .imagen1 {
+      width: 30%; }
+    .mainNovias .imagenes .imagen2 {
+      width: 30%; }
+    .mainNovias .imagenes .imagen3 {
+      width: 30%; }
+    .mainNovias .imagenes .imagen4 {
+      width: 30%; }
+
+/* estilos para shop*/
+.headerTitulo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 250%;
+  margin: 1rem 1rem; }
+
+.mainShop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0%; }
+  .mainShop .headerSubtitulo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 180%;
+    margin: -4rem 4rem; }
+  .mainShop .iframe {
+    margin: 2rem 6rem; }
+
+.footer {
+  margin: 20px;
+  text-align: center; }
+  .footer .footerH2 {
+    font-size: 25%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px; }
+
+/* estilos contacto*/
+.mainContact {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainContact .container {
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    background-color: #878188;
+    padding: 20px;
+    width: 80%; }
+    .mainContact .container input[type=text], .mainContact .container select, .mainContact .container textarea {
+      width: 90%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical; }
+    .mainContact .container label {
+      padding: 12px 12px 12px 0;
+      display: inline-block; }
+    .mainContact .container input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right; }
+    .mainContact .container input[type=submit]:hover {
+      background-color: #45a049; }
+    .mainContact .container .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px; }
+    .mainContact .container .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px; }
+    .mainContact .container .row:after {
+      content: "";
+      display: table;
+      clear: both; }
